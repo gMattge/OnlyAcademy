@@ -75,13 +75,7 @@ const ProfileScreen = ({ navigation }) => {
                 data={[
                   "https://logodix.com/logo/2006444.png",
                   "https://www.1min30.com/logo/wp-content/uploads/2018/10/Rainbow-Six-Si%C3%A8ge-embleme.jpg",
-                  "https://bc-gb.com/wp-content/uploads/2016/10/csgo-logo-wallpapers-7.jpg",
-                  "https://logodix.com/logo/2006444.png",
-                  "https://www.1min30.com/logo/wp-content/uploads/2018/10/Rainbow-Six-Si%C3%A8ge-embleme.jpg",
-                  "https://bc-gb.com/wp-content/uploads/2016/10/csgo-logo-wallpapers-7.jpg",
-                  "https://logodix.com/logo/2006444.png",
-                  "https://www.1min30.com/logo/wp-content/uploads/2018/10/Rainbow-Six-Si%C3%A8ge-embleme.jpg",
-                  "https://bc-gb.com/wp-content/uploads/2016/10/csgo-logo-wallpapers-7.jpg",
+                  "https://logodix.com/logo/2006444.png"
 
                 ]}
               />

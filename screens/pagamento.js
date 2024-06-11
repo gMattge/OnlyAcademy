@@ -1,10 +1,12 @@
+import React from "react";
 import { RouteProp, useNavigation } from "@react-navigation/native";
 import { Button, StyleSheet, Text, TouchableOpacity, View, StatusBar } from 'react-native';
 import Constants from 'expo-constants';
 import { openBrowserAsync } from "expo-web-browser";
-import { ACCESS_TOKEN } from "../config.json";
+import { ACCESS_TOKEN } from "../config";
 
 export default function Pagamento() {    
+const navigation = useNavigation();
 
     const handleIntegracaoMensal = async () => {
         let preferencia = {
@@ -91,7 +93,7 @@ export default function Pagamento() {
     return (
         <View style={styles.container}>
             <View style={styles.statusBarBackground} />
-            <StatusBar barStyle='dark-content' backgroundColor='#FBBA25' translucent />
+            <StatusBar barStyle='dark-content' backgroundColor='#000000' translucent />
             <View style={styles.header}>
                 <Text style={styles.headerText}>Escolha um Plano!</Text>
             </View>
@@ -99,7 +101,7 @@ export default function Pagamento() {
             <View style={styles.optionsContainer}>
                 <TouchableOpacity onPress={() => navigation.navigate('Profile')} style={styles.optionButton}>
                     <View style={styles.optionContent}>
-                        <Text style={styles.optionText}>Plano FREE</Text>
+                        <Text style={styles.optionText}>Plano Gratuito</Text>
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={handleIntegracaoMensal} style={styles.optionButton}>
@@ -130,7 +132,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     headerText: {
-        color: '#1656AD',
+        color: '#FF0000',
         marginTop: 13,
         fontWeight: 'bold',
         fontSize: 32,
